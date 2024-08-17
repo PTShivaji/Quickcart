@@ -11,7 +11,7 @@ const Product = () => {
                     <div class="card-body text-center">
                         <h5 class="card-title">{item.title}</h5>
                         <p className="lead">${item.price}</p>
-                        <NavLink to={`/products/${item.id}`} class="btn btn-outline-primary">Buy Now</NavLink>
+                        <NavLink to={`/products/${item.id}`} class="btn btn-outline-success">Buy Now</NavLink>
                     </div>
 </div>
                 );
@@ -22,7 +22,7 @@ const Product = () => {
                     <div className="container py-5">
                         <div className="row">
                             <div className="col-12 text-center">
-                                <h1>Product</h1>
+                                <h1 className='text-success fw-bolder'>Product</h1>
                                 <hr />
                             </div>
                         </div>

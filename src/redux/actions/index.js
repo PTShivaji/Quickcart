@@ -11,3 +11,11 @@ export const delItem = (product) => {
         payload : product
     }
 }
+
+// New action to decrease quantity
+export const removeItem = (product) => {
+    return {
+        type: 'REMOVEITEM',
+        payload: product
+    }
+}

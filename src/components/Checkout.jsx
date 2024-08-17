@@ -6,15 +6,24 @@ const Checkout = () => {
 
     var total = 0;
     const itemList = (item) => {
-        total = total + item.price;
+        total = total + (item.price * item.quantity);
         return (
             <li className="list-group-item d-flex justify-content-between lh-sm">
                 <div>
                     <h6 className="my-0">{item.title}</h6>
                 </div>
                 <span className="text-muted">${item.price}</span>
+                <div className="my-0">Quantity</div>
+                <span>{item.quantity}</span>
             </li>
         );
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert('Your Order will be delivered soon.');
+        // Clear the form after submission
+        event.target.reset();
     }
 
     return (
@@ -44,11 +53,11 @@ const Checkout = () => {
                     </div>
                     <div className="col-md-7 col-lg-8">
                         <h4 className="mb-3">Billing address</h4>
-                        <form className="needs-validation" novalidate="">
+                        <form onSubmit={handleSubmit} className="needs-validation" novalidate="">
                             <div className="row g-3">
                                 <div className="col-sm-6">
                                     <label htmlFor="firstName" className="form-label">First name</label>
-                                    <input type="text" className="form-control" id="firstName" placeholder="" value="" required="" />
+                                    <input type="text" className="form-control" id="firstName" placeholder="" required="" />
                                     <div className="invalid-feedback">
                                         Valid first name is required.
                                     </div>
@@ -56,7 +65,7 @@ const Checkout = () => {
 
                                 <div className="col-sm-6">
                                     <label htmlFor="lastName" className="form-label">Last name</label>
-                                    <input type="text" className="form-control" id="lastName" placeholder="" value="" required="" />
+                                    <input type="text" className="form-control" id="lastName" placeholder="" required="" />
                                     <div className="invalid-feedback">
                                         Valid last name is required.
                                     </div>
@@ -127,32 +136,20 @@ const Checkout = () => {
 
                             <hr className="my-4" />
 
-                            <div className="form-check">
-                                <input type="checkbox" className="form-check-input" id="same-address" />
-                                <label className="form-check-label" htmlFor="same-address">Shipping address is the same as my billing address</label>
-                            </div>
-
-                            <div className="form-check">
-                                <input type="checkbox" className="form-check-input" id="save-info" />
-                                <label className="form-check-label" htmlFor="save-info">Save this information htmlFor next time</label>
-                            </div>
-
-                            <hr className="my-4" />
-
                             <h4 className="mb-3">Payment</h4>
 
                             <div className="my-3">
                                 <div className="form-check">
-                                    <input id="credit" name="paymentMethod" type="radio" className="form-check-input" checked="" required="" />
-                                    <label className="form-check-label" htmlFor="credit">Credit card</label>
+                                    <input id="credit" name="paymentMethod" type="radio" className="form-check-input" required="" />
+                                    <label className="form-check-label" value="credit">Credit card</label>
                                 </div>
                                 <div className="form-check">
                                     <input id="debit" name="paymentMethod" type="radio" className="form-check-input" required="" />
-                                    <label className="form-check-label" htmlFor="debit">Debit card</label>
+                                    <label className="form-check-label" value="debit">Debit card</label>
                                 </div>
                                 <div className="form-check">
                                     <input id="paypal" name="paymentMethod" type="radio" className="form-check-input" required="" />
-                                    <label className="form-check-label" htmlFor="paypal">PayPal</label>
+                                    <label className="form-check-label" value="paypal">PayPal</label>
                                 </div>
                             </div>
 

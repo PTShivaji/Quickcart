@@ -17,9 +17,11 @@ const ProductDetail = () => {
     const dispatch = useDispatch()
 
     const handleCart = (product) => {
+        
         if (cartBtn === "Add to Cart") {
             dispatch(addItem(product))
             setCartBtn("Remove from Cart")
+            alert('Product added to cart successfully');
         }
         else{
             dispatch(delItem(product))

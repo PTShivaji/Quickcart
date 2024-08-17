@@ -1,45 +1,66 @@
 const DATA = [
     {
         id : 0,
-        title : "IPhone 11",
+        title : "Ally pajama pant",
         price : 750,
-        desc : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-        img : "/assets/images/products/iphone11.png"
+        desc : "Slip into comfort with our Ally Pajama Pant. Crafted from soft, breathable fabric, these pajama pants are perfect for lounging or getting a restful night's sleep. With a relaxed fit and an elastic waistband, they offer both style and ease for your everyday wear.",
+        img : "/assets/images/products/ALLY_PAJAMA_PANT.webp"
     },
     {
         id : 1,
-        title : "IPhone 11 Pro Max",
+        title : "Baloonfit pant",
         price : 800,
-        desc : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-        img : "/assets/images/products/iphone11promax.png"
+        desc : "Elevate your casual wardrobe with the Baloonfit Pant, designed for a stylish yet comfortable look. These pants feature a unique balloon silhouette that adds a touch of fashion-forward flair. Ideal for both everyday wear and special occasions.",
+        img : "/assets/images/products/Baloonfit-pant.jpg"
     },
     {
         id : 2,
-        title : "IPhone 12 Mini",
+        title : "Cocktail dress",
         price : 950,
-        desc : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-        img : "/assets/images/products/iphone12mini.png"
+        desc : "Make a statement with our Cocktail Dress, the perfect choice for any evening event. This dress combines elegance and sophistication, featuring a flattering cut that accentuates your curves. Whether it's a party or a formal gathering, this dress will ensure you shine.",
+        img : "/assets/images/products/cocktail-dress.jpg"
     },
     {
         id : 3,
-        title : "IPhone 12",
+        title : "Cotton pant",
         price : 1050,
-        desc : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-        img : "/assets/images/products/iphone12.png"
+        desc : "Our Cotton Pant offers the perfect blend of comfort and style. Made from high-quality cotton, these pants are soft against the skin and breathable, making them ideal for everyday wear. With a classic design, they can be dressed up or down for any occasion.",
+        img : "/assets/images/products/Cotton-Pant.png"
     },
     {
         id : 4,
-        title : "IPhone 12 Pro",
+        title : "Gown",
         price : 1150,
-        desc : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-        img : "/assets/images/products/iphone12pro.png"
+        desc : "Embrace timeless elegance with our Gown, a stunning piece for your special occasions. This gown features a flowing silhouette and intricate detailing, ensuring you look and feel like royalty. Perfect for weddings, galas, and other formal events.",
+        img : "/assets/images/products/gown.png"
     },
     {
         id : 5,
-        title : "IPhone 12 Pro Max",
+        title : "Men cotton pant",
         price : 1250,
-        desc : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
-        img : "/assets/images/products/iphone12promax.png"
+        desc : "The Men Cotton Pant is a wardrobe essential for those who value both comfort and style. Crafted from premium cotton, these pants offer a tailored fit with a versatile look. Perfect for casual outings or dressing up for a more polished appearance.",
+        img : "/assets/images/products/Men-Cotton-Pant.png"
+    },
+    {
+        id : 6,
+        title : "Men jeans",
+        price : 1250,
+        desc : " Discover the perfect pair of jeans with our Men Jeans. Designed for durability and comfort, these jeans feature a classic fit that never goes out of style. Whether you're dressing up or down, these jeans are a versatile addition to your wardrobe.",
+        img : "/assets/images/products/men-jeans.png"
+    },
+    {
+        id : 7,
+        title : "Middy",
+        price : 1250,
+        desc : "Stay effortlessly chic with our Middy, a versatile piece that can be dressed up or down. With a comfortable fit and stylish design, this garment is perfect for any occasion. Pair it with your favorite accessories to create a look that's uniquely yours.",
+        img : "/assets/images/products/middy.jpg"
+    },
+    {
+        id : 8,
+        title : "Shorts",
+        price : 1250,
+        desc : " Beat the heat with our stylish Shorts, designed for maximum comfort and versatility. Perfect for casual outings or lounging at home, these shorts offer a relaxed fit and breathable fabric, making them your go-to choice for warm weather.",
+        img : "/assets/images/products/shorts.jpg"
     }
 ]
 
